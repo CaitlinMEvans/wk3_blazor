@@ -1,0 +1,31 @@
+@page "/pizzas"
+@using BlazingPizza.Models
+@using BlazingPizza.Data
+
+<PageTitle>Pizza List</PageTitle>
+
+<h1>Our Pizzas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Vegetarian</th>
+            <th>Vegan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pizza in PizzaService.GetPizzas())
+        {
+            <tr>
+                <td>@pizza.Name</td>
+                <td>@pizza.Description</td>
+                <td>$@pizza.Price</td>
+                <td>@(pizza.Vegetarian ? "Yes" : "No")</td>
+                <td>@(pizza.Vegan ? "Yes" : "No")</td>
+            </tr>
+        }
+    </tbody>
+</table>

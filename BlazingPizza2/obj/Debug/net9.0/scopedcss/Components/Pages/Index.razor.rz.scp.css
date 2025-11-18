@@ -1,0 +1,154 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+html[b-gw59rxzba6], body[b-gw59rxzba6] {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    color: #1E1E1E;
+}
+
+/* Reset link colors */
+a[b-gw59rxzba6], .btn-link[b-gw59rxzba6] {
+    color: #D33F2F;
+    text-decoration: none;
+}
+
+a:hover[b-gw59rxzba6] {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Layout / Sidebar
+=========================== */
+
+.nav-scrollable[b-gw59rxzba6] {
+    background-color: #1E1E1E;
+    color: white;
+    padding-top: 1rem;
+}
+
+.navbar-brand[b-gw59rxzba6] {
+    color: #FFF7E9 !important;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-link[b-gw59rxzba6] {
+    color: #E0E0E0 !important;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+}
+
+.nav-link:hover[b-gw59rxzba6],
+.nav-link.active[b-gw59rxzba6] {
+    background-color: #333333 !important;
+    color: #FFF7E9 !important;
+}
+
+/* ===========================
+   Page Content
+=========================== */
+
+.content[b-gw59rxzba6] {
+    padding: 2rem;
+}
+
+h1[b-gw59rxzba6] {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+    color: #1E1E1E;
+}
+
+p[b-gw59rxzba6] {
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* ===========================
+   Pizza Cards
+=========================== */
+
+.pizza-list[b-gw59rxzba6] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    margin-top: 2rem;
+}
+
+.pizza-card[b-gw59rxzba6] {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    width: 330px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pizza-card:hover[b-gw59rxzba6] {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.pizza-card h3[b-gw59rxzba6] {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    color: #E67E22; /* warm pizza orange */
+}
+
+.pizza-card p[b-gw59rxzba6] {
+    margin: 0.25rem 0;
+    color: #555;
+}
+
+.pizza-card .price[b-gw59rxzba6] {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2E7D32; /* basil green */
+    margin: 1rem 0;
+}
+
+/* ===========================
+   Tags (Veg / Vegan)
+=========================== */
+
+.badge[b-gw59rxzba6] {
+    display: inline-block;
+    padding: 0.35rem 0.6rem;
+    margin: 0.25rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+}
+
+.badge-veg[b-gw59rxzba6] {
+    background-color: #2E7D32; /* basil */
+}
+
+.badge-vegan[b-gw59rxzba6] {
+    background-color: #D33F2F; /* tomato red */
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-primary[b-gw59rxzba6] {
+    background-color: #D33F2F;
+    border-color: #C0392B;
+}
+
+.btn-primary:hover[b-gw59rxzba6] {
+    background-color: #B53024;
+}
+
+/* Focus Elements */
+.btn:focus[b-gw59rxzba6],
+.form-control:focus[b-gw59rxzba6] {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(214, 68, 50, 0.35);
+}

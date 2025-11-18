@@ -1,0 +1,30 @@
+@page "/"
+@using BlazingPizza.Models
+@using BlazingPizza.Data
+
+<PageTitle>Blazing Pizza</PageTitle>
+
+
+<h1>Blazing Pizzas</h1>
+
+<p>Choose your pizza:</p>
+
+<div class="pizza-list">
+    @foreach (var pizza in PizzaService.GetPizzas())
+    {
+        <div class="pizza-card">
+            <h3>@pizza.Name</h3>
+            <p>@pizza.Description</p>
+            <p class="price">$@pizza.Price</p>
+
+            @if (pizza.Vegetarian)
+            {
+                <span class="badge badge-veg">Vegetarian</span>
+            }
+            @if (pizza.Vegan)
+            {
+                <span class="badge badge-vegan">Vegan</span>
+            }
+        </div>
+    }
+</div>
