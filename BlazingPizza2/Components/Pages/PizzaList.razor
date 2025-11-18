@@ -22,7 +22,7 @@
             <tr>
                 <td>@pizza.Name</td>
                 <td>@pizza.Description</td>
-                <td>$@pizza.Price</td>
+                <td>@pizza.Price.ToString("C", CultureInfo.GetCultureInfo("en-US"))</td>
                 <td>@(pizza.Vegetarian ? "Yes" : "No")</td>
                 <td>@(pizza.Vegan ? "Yes" : "No")</td>
             </tr>

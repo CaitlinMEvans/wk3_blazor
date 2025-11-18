@@ -15,7 +15,9 @@
         <div class="pizza-card">
             <h3>@pizza.Name</h3>
             <p>@pizza.Description</p>
-            <p class="price">$@pizza.Price</p>
+            <p class="price">
+                @pizza.Price.ToString("C", CultureInfo.GetCultureInfo("en-US"))
+            </p>
 
             @if (pizza.Vegetarian)
             {

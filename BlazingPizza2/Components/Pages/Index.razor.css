@@ -152,3 +152,11 @@ p {
     outline: none;
     box-shadow: 0 0 0 0.2rem rgba(214, 68, 50, 0.35);
 }
+
+.app-footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #666;
+}
