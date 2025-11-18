@@ -13,6 +13,7 @@ C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingP
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\BlazingPizza2.AssemblyInfo.cs
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\BlazingPizza2.csproj.CoreCompileInputs.cache
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\BlazingPizza2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\BlazingPizza2.sourcelink.json
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -66,8 +67,8 @@ C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingP
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\fasdz34lwb-h1s4sie4z3.gz
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\li40f463cq-63fj8s7r0e.gz
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\484xivtqtf-0j3bgjxly4.gz
-C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\i8xa5h39ci-1p0aem3kn1.gz
-C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\t7zdpiyqa0-1p0aem3kn1.gz
+C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\i8xa5h39ci-g5yo3ek5me.gz
+C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\compressed\t7zdpiyqa0-g5yo3ek5me.gz
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\c8tsg\Desktop\BYUi\BYUi_2025\Block 06\CSE325 - .Net\wk3_blazor\BlazingPizza2\obj\Debug\net9.0\staticwebassets.development.json

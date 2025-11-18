@@ -97,6 +97,14 @@ main[b-4lwk4jbl48] {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+    .app-footer[b-4lwk4jbl48] {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #666;
+}
 /* _content/BlazingPizza2/Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-0pw1zeauzk] {
     appearance: none;
@@ -357,4 +365,12 @@ p[b-gw59rxzba6] {
 .form-control:focus[b-gw59rxzba6] {
     outline: none;
     box-shadow: 0 0 0 0.2rem rgba(214, 68, 50, 0.35);
+}
+
+.app-footer[b-gw59rxzba6] {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #666;
 }
