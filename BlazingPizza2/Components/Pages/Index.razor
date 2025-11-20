@@ -1,32 +1,113 @@
 @page "/"
-@using BlazingPizza.Models
-@using BlazingPizza.Data
+@rendermode InteractiveServer
+@using BlazingPizza2.Models
+@using BlazingPizza2.Services
+@inject PizzaService PizzaService
 
-<PageTitle>Blazing Pizza</PageTitle>
+<PageTitle>Blazing Pizzas</PageTitle>
 
+<div class="main">
+    <h1>Blazing Pizzas</h1>
+    <p class="subtitle">Choose your pizza:</p>
 
-<h1>Blazing Pizzas</h1>
-
-<p>Choose your pizza:</p>
-
-<div class="pizza-list">
-    @foreach (var pizza in PizzaService.GetPizzas())
-    {
-        <div class="pizza-card">
-            <h3>@pizza.Name</h3>
-            <p>@pizza.Description</p>
-            <p class="price">
-                @pizza.Price.ToString("C", CultureInfo.GetCultureInfo("en-US"))
-            </p>
-
-            @if (pizza.Vegetarian)
-            {
-                <span class="badge badge-veg">Vegetarian</span>
-            }
-            @if (pizza.Vegan)
-            {
-                <span class="badge badge-vegan">Vegan</span>
-            }
-        </div>
-    }
+    <div class="pizza-cards">
+        @foreach (var special in specials)
+        {
+            <div class="pizza-card" @onclick="@(() => AddPizzaToOrder(special))">
+                <div class="pizza-image">
+                    <img src="@special.ImageUrl" alt="@special.Name" />
+                </div>
+                <div class="pizza-info">
+                    <h3>@special.Name</h3>
+                    <p class="pizza-description">@special.Description</p>
+                    <p class="pizza-price">$@special.GetFormattedBasePrice()</p>
+                    @if (special.Name.Contains("Veggie") || special.Name.Contains("Cheese"))
+                    {
+                        <span class="badge vegetarian">Vegetarian</span>
+                    }
+                    @if (special.Name == "Veggie Special")
+                    {
+                        <span class="badge vegan">Vegan</span>
+                    }
+                </div>
+            </div>
+        }
+    </div>
 </div>
+
+<div class="sidebar">
+    <div class="order-contents">
+        <h2>Your Order</h2>
+
+        @if (order.Pizzas.Count == 0)
+        {
+            <p class="empty-cart">Choose a pizza to get started</p>
+        }
+        else
+        {
+            <ul class="order-list">
+                @foreach (var pizza in order.Pizzas)
+                {
+                    <li>
+                        <div class="order-item">
+                            <div class="order-item-details">
+                                <span class="order-item-size">12"</span>
+                                <span class="order-item-name">@pizza.Special?.Name</span>
+                            </div>
+                            <span class="order-item-price">$@pizza.GetFormattedTotalPrice()</span>
+                            <button class="delete-button" @onclick="@(() => RemovePizza(pizza))" @onclick:stopPropagation="true">✕</button>
+                        </div>
+                    </li>
+                }
+            </ul>
+
+            <div class="order-total">
+                <span>Total:</span>
+                <strong>$@order.GetFormattedTotalPrice()</strong>
+            </div>
+
+            <button class="order-button" @onclick="PlaceOrder">
+                Order ›
+            </button>
+        }
+    </div>
+</div>
+
+@code {
+    private List<PizzaSpecial> specials = new();
+    private Order order = new();
+
+    protected override void OnInitialized()
+    {
+        specials = PizzaService.GetSpecials();
+    }
+
+    private void AddPizzaToOrder(PizzaSpecial special)
+    {
+        var pizza = new Pizza
+        {
+            Special = special,
+            SpecialId = special.Id,
+            Size = Pizza.DefaultSize
+        };
+        order.Pizzas.Add(pizza);
+        StateHasChanged(); // Force UI update
+    }
+
+    private void RemovePizza(Pizza pizza)
+    {
+        order.Pizzas.Remove(pizza);
+        StateHasChanged(); // Force UI update
+    }
+
+    private void PlaceOrder()
+    {
+        // This is just for demonstration - in real app would save to database
+        var total = order.GetFormattedTotalPrice();
+        Console.WriteLine($"Order placed! Total: ${total}");
+        
+        // Clear the order after "placing" it
+        order = new Order();
+        StateHasChanged();
+    }
+}

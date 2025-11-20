@@ -1,0 +1,35 @@
+@page "/myorders"
+
+<PageTitle>My Orders</PageTitle>
+
+<div class="main">
+    <h1>My Orders</h1>
+    <p>Your order history will appear here.</p>
+    
+    <div class="empty-state">
+        <p>You haven't placed any orders yet.</p>
+        <a href="/" class="btn-primary">Order some pizza!</a>
+    </div>
+</div>
+
+<style>
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        margin-top: 2rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+    }
+</style>

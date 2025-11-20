@@ -1,27 +1,23 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<div class="top-bar">
+    <a class="logo" href="/">
+        <img src="img/logo.svg" alt="Blazing Pizza" />
+        <span class="brand-title">Blazing Pizza</span>
+    </a>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+    <nav class="nav-menu">
+        <a href="/" class="nav-link active">
+            Get Pizza
+        </a>
+        <a href="/myorders" class="nav-link">
+            My Orders
+        </a>
+    </nav>
 
-        <article class="content px-4">
-            @Body
-        </article>
-
-        <footer class="app-footer px-4">
-            © @DateTime.Now.Year Caitlin Evans – United States
-        </footer>
-    </main>
+    <a class="nav-link about" href="/about">About</a>
 </div>
 
-<div id="blazor-error-ui" data-nosnippet>
-    An unhandled error has occurred.
-    <a href="." class="reload">Reload</a>
-    <span class="dismiss">🗙</span>
+<div class="content">
+    @Body
 </div>
