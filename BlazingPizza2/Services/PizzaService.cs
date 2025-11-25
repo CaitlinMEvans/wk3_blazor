@@ -14,7 +14,7 @@ namespace BlazingPizza2.Services
                     Name = "Cheese Pizza",
                     Description = "Classic cheese",
                     BasePrice = 9.99m,
-                    ImageUrl = "img/pizzas/cheese.jpg"
+                    ImageUrl = "img/cheese.jpg"
                 },
                 new PizzaSpecial
                 {
@@ -22,7 +22,7 @@ namespace BlazingPizza2.Services
                     Name = "Pepperoni",
                     Description = "Spicy pepperoni",
                     BasePrice = 10.99m,
-                    ImageUrl = "img/pizzas/pepperoni.jpg"
+                    ImageUrl = "img/pep.jpg"
                 },
                 new PizzaSpecial
                 {
@@ -30,7 +30,7 @@ namespace BlazingPizza2.Services
                     Name = "Veggie Special",
                     Description = "Garden fresh",
                     BasePrice = 10.99m,
-                    ImageUrl = "img/pizzas/veggie.jpg"
+                    ImageUrl = "img/veg.jpg"
                 },
                 new PizzaSpecial
                 {
@@ -38,7 +38,7 @@ namespace BlazingPizza2.Services
                     Name = "Meat Lovers",
                     Description = "All the meats",
                     BasePrice = 12.99m,
-                    ImageUrl = "img/pizzas/meatlover.jpg"
+                    ImageUrl = "img/sausage.jpg"
                 },
                 new PizzaSpecial
                 {
@@ -46,7 +46,7 @@ namespace BlazingPizza2.Services
                     Name = "Hawaiian",
                     Description = "Ham and pineapple",
                     BasePrice = 11.99m,
-                    ImageUrl = "img/pizzas/hawaiian.jpg"
+                    ImageUrl = "img/hawiian.jpg"
                 },
                 new PizzaSpecial
                 {
@@ -54,7 +54,7 @@ namespace BlazingPizza2.Services
                     Name = "BBQ Chicken",
                     Description = "Tangy BBQ sauce",
                     BasePrice = 11.99m,
-                    ImageUrl = "img/pizzas/bbqchicken.jpg"
+                    ImageUrl = "img/bbq.jpg"
                 }
             };
         }
